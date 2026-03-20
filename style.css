@@ -2035,3 +2035,10 @@ body {
   90% { opacity: 1; }
   100% { transform: translateY(-100vh) translateX(50px); opacity: 0; }
 }
+.flower__grass {
+  --c: #003366;
+}
+
+.long-g .leaf {
+  --c: #004080;
+  }
