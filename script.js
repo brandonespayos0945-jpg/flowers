@@ -1,6 +1,3 @@
-onload = () => {
-  document.body.classList.remove("container");
-
 document.addEventListener("DOMContentLoaded", () => {
     // 1. Generate Parallax Stars dynamically
     const createStars = (layerId, count, size) => {
@@ -54,15 +51,3 @@ document.addEventListener("DOMContentLoaded", () => {
     // Spawn a new particle every 300 milliseconds
     setInterval(createParticle, 300);
 });
-
-  // ✨ FIREFLIES
-  for (let i = 0; i < 20; i++) {
-    const f = document.createElement("div");
-    f.classList.add("firefly");
-
-    f.style.left = Math.random() * 100 + "vw";
-    f.style.top = Math.random() * 100 + "vh";
-
-    firefliesContainer.appendChild(f);
-  }
-};
