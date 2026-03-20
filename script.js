@@ -3,9 +3,10 @@ onload = () => {
 
   const particlesContainer = document.querySelector(".particles");
   const bubblesContainer = document.querySelector(".bubbles");
+  const firefliesContainer = document.querySelector(".fireflies");
 
   // 💙 PARTICLES
-  for (let i = 0; i < 40; i++) {
+  for (let i = 0; i < 30; i++) {
     const p = document.createElement("div");
     p.classList.add("particle");
 
@@ -17,7 +18,7 @@ onload = () => {
   }
 
   // ❤️ HEARTS
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 15; i++) {
     const b = document.createElement("div");
     b.classList.add("bubble");
 
@@ -31,5 +32,16 @@ onload = () => {
     `;
 
     bubblesContainer.appendChild(b);
+  }
+
+  // ✨ FIREFLIES
+  for (let i = 0; i < 20; i++) {
+    const f = document.createElement("div");
+    f.classList.add("firefly");
+
+    f.style.left = Math.random() * 100 + "vw";
+    f.style.top = Math.random() * 100 + "vh";
+
+    firefliesContainer.appendChild(f);
   }
 };
