@@ -4,7 +4,7 @@ onload = () => {
   const particlesContainer = document.querySelector(".particles");
   const bubblesContainer = document.querySelector(".bubbles");
 
-  // 💙 BLUE PARTICLES
+  // 💙 PARTICLES
   for (let i = 0; i < 40; i++) {
     const p = document.createElement("div");
     p.classList.add("particle");
@@ -16,7 +16,7 @@ onload = () => {
     particlesContainer.appendChild(p);
   }
 
-  // ❤️ HEART BUBBLES
+  // ❤️ HEARTS
   for (let i = 0; i < 20; i++) {
     const b = document.createElement("div");
     b.classList.add("bubble");
